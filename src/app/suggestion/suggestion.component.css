@@ -1,0 +1,82 @@
+/* Styles for the suggestion popup */
+.popup-container {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    background-color: #f8f9fa;
+    width: 300px;
+    height: 80%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    z-index: 999;
+    border-radius: 10px;
+  }
+  
+  .popup-container h2 {
+    color: #007bff;
+  }
+  
+  .popup-container label {
+    color: #495057;
+  }
+  
+  .popup-container input[type="text"],
+  .popup-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .popup-container input[type="checkbox"] {
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .popup-container button[type="submit"],
+  .popup-container button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .popup-container button[type="submit"]:hover,
+  .popup-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  .suggestion-list {
+    overflow-y: auto;
+    max-height: calc(100% - 200px);
+  }
+  
+  .suggestion-list ul {
+    padding: 0;
+  }
+  
+  .suggestion-list li {
+    list-style: none;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+  }
+  
+  /* Button styles */
+  button {
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  /* Positioning the buttons */
+  .suggestion-list button {
+    margin-right: 5px;
+  }
+  
